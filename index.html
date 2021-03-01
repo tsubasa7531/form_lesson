@@ -10,6 +10,130 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <section class="wrapper">
+      <div class="inner">
+        <div class="main-content">
+          <div class="form-title">アカウント作成</div>
+            <div class="columns">
+              <div class="column is-halfwidth">
+                <a href="#" class="button-init button is-Facebook is-width">Facebookでスタート</a>
+              </div>
+              <div class="column is-halfwidth">
+                <a href="#" class="button-init button is-Google is-width">Googleでスタート</a>
+              </div>
+            </div>
+            <p class="supplement-text after supplrmrnt-text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            <div class="devider">
+              <p class="after supplrmrnt-text">アカウント情報</p>
+            </div>
+          <form class="form-content" action="#" method="POST">
+            <div class="row name-box">
+              <div class="name is-width">
+                <p class="label">名字
+                  <span class="mark">※</span>
+                </p>
+                <input type="text" name="last-name" class="input-init input-zone" required>
+              </div>
+              <div class="name is-width">
+                <p class="label">名前
+                  <span class="mark">※</span>
+                </p>
+                <input type="text" name="last-name" class="input-init input-zone" required>
+              </div>
+            </div>
 
+            <div class="row gender">
+              <p class="label">性別</p>
+              <div class="gender-content">
+                <label class="gender-contents">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>男性</span>
+                </label>
+                <label class="gender-contents">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>女性</span>
+                </label>
+                <label class="gender-contents">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row birthplace is-halfwidth">
+              <p class="label">出身</p>
+              <div class="serect-area">
+                <select name="birthplace" id="birthplace-select" class="input-init input-zone birthplace-input">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>  
+                  <option value="埼玉">埼玉</option>  
+                  <option value="神奈川">神奈川</option> 
+                </select>
+              </div>
+            </div>
+
+            <div class="row e-mail">
+              <p class="label">Eメール
+                <span class="mark">※</span>
+              </p>
+              <input type="email" name="email" class="input-init input-zone is-width" placeholder="ex) hoge@example.com" required>
+            </div>
+
+            <div class="row tel">
+              <p class="label">電話番号</p>
+              <input type="tel" name="tel" class="input-init input-zone is-width" placeholder="ex) 09012345678" required>
+            </div>
+
+            <div class="row password">
+              <p class="label">パスワード
+                <span class="mark">※</span>
+              </p>
+              <input type="password" name="password" class="input-init input-zone" required>
+            </div>
+            
+            <div class="row password">
+              <p class="label">パスワード(確認用)
+                <span class="mark">※</span>
+              </p>
+              <input type="password" name="password" class="input-init input-zone" required>
+            </div>
+
+            <div class="row course">
+              <p class="label">希望コース</p>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="frontend" id="frontend">
+                <label class="course-option-text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="backend" id="backend">
+                <label class="course-option-text" for="backend">バックエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="application" id="application">
+                <label class="course-option-text" for="application">アプリ</label>
+              </div>
+            </div>
+
+            <div class="row remarks">
+              <p class="label">備考</p>
+              <textarea class="input-init input-zone" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+
+            <div class="row">
+              <input type="submit" value="アカウント作成" class="input-init button submit-btn is-width">
+            </div>
+            <p class="under-text">アカウント作成をすることにより、
+              <a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>
+              に同意するものとします。
+            </p>
+          </form>
+        </div>
+
+        <div class="foot-text">
+          <p>すでにアカウントお持ちですか？<a class="link-color" href>ログイン</a></p>
+          <a class="link-color resend-mail" href>認証メール届きませんか</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
