@@ -290,6 +290,11 @@
 .submit-btn:hover {
   background-color: #01a6a4;
 }
+.submit-btn:active {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #01a6a4;
+}
 
 .under-text {
   font-size: 12px;
