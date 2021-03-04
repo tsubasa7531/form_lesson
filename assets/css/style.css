@@ -156,8 +156,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: none;
-  background: transparent;
   outline: none;
   resize: none;
 }
@@ -299,7 +297,11 @@
 }
 
 .link-color {
-  color: #01bfbd;
+  color: #01a6a4;
+}
+
+.link-color:hover {
+  color: #01bfad;
 }
 
 .foot-text {
@@ -314,4 +316,8 @@
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 8px;
+}
+
+.foot-text a:hover {
+  border-bottom: 1px solid #01bfad;
 }
